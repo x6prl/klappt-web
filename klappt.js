@@ -48,7 +48,7 @@ if (ENVIRONMENT_IS_NODE) {
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmp68v71rd8.js
+// include: /tmp/tmpcni1n3sp.js
 if (!Module["expectedDataFileDownloads"]) Module["expectedDataFileDownloads"] = 0;
 
 Module["expectedDataFileDownloads"]++;
@@ -195,7 +195,7 @@ Module["expectedDataFileDownloads"]++;
   });
 })();
 
-// end include: /tmp/tmp68v71rd8.js
+// end include: /tmp/tmpcni1n3sp.js
 // include: /home/x/src/klappt/src/platform/web/web_persist.js
 Module.preRun = Module.preRun || [];
 
@@ -9098,7 +9098,7 @@ Module["FS_createLazyFile"] = FS_createLazyFile;
 var proxiedFunctionTable = [ _proc_exit, exitOnMainThread, pthreadCreateProxied, ___syscall_fcntl64, ___syscall_fdatasync, ___syscall_fstat64, ___syscall_ftruncate64, ___syscall_getdents64, ___syscall_ioctl, ___syscall_lstat64, ___syscall_mkdirat, ___syscall_newfstatat, ___syscall_openat, ___syscall_renameat, ___syscall_rmdir, ___syscall_stat64, ___syscall_unlinkat, ___syscall_utimensat, __mmap_js, __munmap_js, _emscripten_exit_fullscreen, getCanvasSizeMainThread, setCanvasElementSizeMainThread, _emscripten_exit_pointerlock, _emscripten_get_device_pixel_ratio, _emscripten_get_element_css_size, _emscripten_get_fullscreen_status, _emscripten_get_gamepad_status, _emscripten_get_num_gamepads, _emscripten_get_screen_size, _emscripten_request_fullscreen_strategy, _emscripten_request_pointerlock, _emscripten_sample_gamepad_data, _emscripten_set_beforeunload_callback_on_thread, _emscripten_set_blur_callback_on_thread, _emscripten_set_devicemotion_callback_on_thread, _emscripten_set_element_css_size, _emscripten_set_focus_callback_on_thread, _emscripten_set_fullscreenchange_callback_on_thread, _emscripten_set_gamepadconnected_callback_on_thread, _emscripten_set_gamepaddisconnected_callback_on_thread, _emscripten_set_keydown_callback_on_thread, _emscripten_set_keypress_callback_on_thread, _emscripten_set_keyup_callback_on_thread, _emscripten_set_orientationchange_callback_on_thread, _emscripten_set_pointerlockchange_callback_on_thread, _emscripten_set_resize_callback_on_thread, _emscripten_set_visibilitychange_callback_on_thread, _emscripten_set_wheel_callback_on_thread, _emscripten_set_window_title, _environ_get, _environ_sizes_get, _fd_close, _fd_pread, _fd_pwrite, _fd_read, _fd_seek, _fd_write ];
 
 var ASM_CONSTS = {
-  591648: () => {
+  590768: () => {
     if (typeof navigator == "undefined" || typeof window == "undefined") {
       return 0;
     }
@@ -9110,7 +9110,7 @@ var ASM_CONSTS = {
     const coarsePointer = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
     return (mobileUA || ipadDesktopMode || coarsePointer) ? 1 : 0;
   },
-  592203: () => {
+  591323: () => {
     const state = Module.lexiSDLTextInput;
     if (!state || !state.input) {
       return;
@@ -9125,7 +9125,7 @@ var ASM_CONSTS = {
     } catch (e) {}
     state.input.style.display = "none";
   },
-  592486: ($0, $1, $2, $3) => {
+  591606: ($0, $1, $2, $3) => {
     const state = Module.lexiSDLTextInput;
     if (!state || !state.input) {
       return;
@@ -9136,14 +9136,14 @@ var ASM_CONSTS = {
     state.input.style.height = $3 + "px";
     state.input.style.pointerEvents = state.active ? "auto" : "none";
   },
-  592781: ($0, $1) => {
+  591901: ($0, $1) => {
     const state = Module.lexiSDLTextInput;
     if (!state || !state.input) {
       return;
     }
     stringToUTF8(state.input.value || "", $0, $1);
   },
-  592911: () => {
+  592031: () => {
     const state = Module.lexiSDLTextInput;
     if (!state) {
       return 0;
@@ -9152,7 +9152,7 @@ var ASM_CONSTS = {
     state.submitted = false;
     return submitted;
   },
-  593066: () => {
+  592186: () => {
     const state = Module.lexiSDLTextInput;
     if (!state) {
       return 0;
@@ -9171,7 +9171,7 @@ var ASM_CONSTS = {
     state.blurred = false;
     return blurred;
   },
-  593551: ($0, $1, $2, $3, $4, $5) => {
+  592671: ($0, $1, $2, $3, $4, $5) => {
     let state = Module.lexiSDLTextInput;
     if (!state) {
       state = {};
@@ -9259,27 +9259,27 @@ var ASM_CONSTS = {
       input.setSelectionRange(end, end);
     } catch (e) {}
   },
-  595844: () => {
+  594964: () => {
     const state = Module.lexiSDLTextInput;
     if (state && state.input) {
       state.input.value = "";
     }
   },
-  595941: () => {
+  595061: () => {
     FS.mkdir("/assets");
     FS.mount(IDBFS, {}, "/assets");
   },
-  595994: () => {
+  595114: () => {
     FS.syncfs(true, function(err) {
       if (err) console.error("IDBFS sync error:", err);
     });
   },
-  596081: () => {
+  595201: () => {
     FS.syncfs(false, function(err) {
       console.log("Saved to IndexedDB");
     });
   },
-  596153: () => {
+  595273: () => {
     if (typeof (Module["SDL3"]) === "undefined") {
       Module["SDL3"] = {};
     }
@@ -9295,7 +9295,7 @@ var ASM_CONSTS = {
       };
     }
   },
-  596467: $0 => {
+  595587: $0 => {
     var str = UTF8ToString($0) + "\n\n" + "Abort/Retry/Ignore/AlwaysIgnore? [ariA] :";
     var reply = window.prompt(str, "i");
     if (reply === null) {
@@ -9303,13 +9303,13 @@ var ASM_CONSTS = {
     }
     return reply.length === 1 ? reply.charCodeAt(0) : -1;
   },
-  596682: () => {
+  595802: () => {
     Module["SDL3"].dummy_audio = {};
     Module["SDL3"].dummy_audio.timers = [];
     Module["SDL3"].dummy_audio.timers[0] = undefined;
     Module["SDL3"].dummy_audio.timers[1] = undefined;
   },
-  596859: ($0, $1, $2, $3, $4) => {
+  595979: ($0, $1, $2, $3, $4) => {
     var a = Module["SDL3"].dummy_audio;
     if (a.timers[$0] !== undefined) {
       clearInterval(a.timers[$0]);
@@ -9318,14 +9318,14 @@ var ASM_CONSTS = {
       dynCall("vi", $3, [ $4 ]);
     }, ($1 / $2) * 1e3);
   },
-  597051: $0 => {
+  596171: $0 => {
     var a = Module["SDL3"].dummy_audio;
     if (a.timers[$0] !== undefined) {
       clearInterval(a.timers[$0]);
     }
     a.timers[$0] = undefined;
   },
-  597182: $0 => {
+  596302: $0 => {
     var parms = new URLSearchParams(window.location.search);
     for (const [key, value] of parms) {
       if (key.startsWith("SDL_")) {
@@ -9339,7 +9339,7 @@ var ASM_CONSTS = {
       }
     }
   },
-  597523: () => {
+  596643: () => {
     if (typeof (AudioContext) !== "undefined") {
       return true;
     } else if (typeof (webkitAudioContext) !== "undefined") {
@@ -9347,13 +9347,13 @@ var ASM_CONSTS = {
     }
     return false;
   },
-  597670: () => {
+  596790: () => {
     if ((typeof (navigator.mediaDevices) !== "undefined") && (typeof (navigator.mediaDevices.getUserMedia) !== "undefined")) {
       return true;
     }
     return false;
   },
-  597824: () => {
+  596944: () => {
     var SDL3 = Module["SDL3"];
     if (typeof (SDL3.audio_playback) === "undefined") {
       SDL3.audio_playback = {};
@@ -9375,8 +9375,8 @@ var ASM_CONSTS = {
     }
     return (SDL3.audioContext !== undefined);
   },
-  598403: () => Module["SDL3"].audioContext.sampleRate,
-  598454: ($0, $1, $2, $3) => {
+  597523: () => Module["SDL3"].audioContext.sampleRate,
+  597574: ($0, $1, $2, $3) => {
     var SDL3 = Module["SDL3"];
     var have_microphone = function(stream) {
       if (SDL3.audio_recording.silenceTimer !== undefined) {
@@ -9413,7 +9413,7 @@ var ASM_CONSTS = {
       }).then(have_microphone).catch(no_microphone);
     }
   },
-  600145: ($0, $1, $2, $3) => {
+  599265: ($0, $1, $2, $3) => {
     var SDL3 = Module["SDL3"];
     SDL3.audio_playback.scriptProcessorNode = SDL3.audioContext["createScriptProcessor"]($1, 0, $0);
     SDL3.audio_playback.scriptProcessorNode["onaudioprocess"] = function(e) {
@@ -9445,7 +9445,7 @@ var ASM_CONSTS = {
       SDL3.audio_playback.silenceTimer = setInterval(silence_callback, ($1 / SDL3.audioContext.sampleRate) * 1e3);
     }
   },
-  601461: $0 => {
+  600581: $0 => {
     var SDL3 = Module["SDL3"];
     if ($0) {
       if (SDL3.audio_recording.silenceTimer !== undefined) {
@@ -9479,7 +9479,7 @@ var ASM_CONSTS = {
       SDL3.audioContext = undefined;
     }
   },
-  602617: ($0, $1) => {
+  601737: ($0, $1) => {
     var SDL3 = Module["SDL3"];
     var buf = SDL3.CPtrToHeap32Index($0);
     var numChannels = SDL3.audio_playback.currentPlaybackBuffer["numberOfChannels"];
@@ -9493,7 +9493,7 @@ var ASM_CONSTS = {
       }
     }
   },
-  603150: ($0, $1) => {
+  602270: ($0, $1) => {
     var SDL3 = Module["SDL3"];
     var numChannels = SDL3.audio_recording.currentRecordingBuffer.numberOfChannels;
     for (var c = 0; c < numChannels; ++c) {
@@ -9512,11 +9512,11 @@ var ASM_CONSTS = {
       }
     }
   },
-  603777: () => {
+  602897: () => {
     Module["SDL3"].camera = {};
   },
-  603809: () => (navigator.mediaDevices === undefined) ? 0 : 1,
-  603868: ($0, $1, $2, $3, $4) => {
+  602929: () => (navigator.mediaDevices === undefined) ? 0 : 1,
+  602988: ($0, $1, $2, $3, $4) => {
     const device = $0;
     const w = $1;
     const h = $2;
@@ -9590,7 +9590,7 @@ var ASM_CONSTS = {
       outcome(device, 0, 0, 0, 0);
     });
   },
-  606174: () => {
+  605294: () => {
     const SDL3 = Module["SDL3"];
     if ((typeof (SDL3) === "undefined") || (typeof (SDL3.camera) === "undefined") || (typeof (SDL3.camera.stream) === "undefined")) {
       return;
@@ -9598,7 +9598,7 @@ var ASM_CONSTS = {
     SDL3.camera.stream.getTracks().forEach(track => track.stop());
     SDL3.camera = {};
   },
-  606425: ($0, $1, $2) => {
+  605545: ($0, $1, $2) => {
     const w = $0;
     const h = $1;
     const rgba = $2;
@@ -9611,19 +9611,19 @@ var ASM_CONSTS = {
     (growMemViews(), HEAPU8).set(imgrgba, rgba);
     return 1;
   },
-  606803: () => {
+  605923: () => {
     if (typeof (Module["SDL3"]) !== "undefined") {
       Module["SDL3"].camera = undefined;
     }
   },
-  606890: $0 => {
+  606010: $0 => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad || !gamepad["vibrationActuator"] || !gamepad["vibrationActuator"]["effects"] || !gamepad["vibrationActuator"]["effects"]["includes"]("trigger-rumble")) {
       return false;
     }
     return true;
   },
-  607136: $0 => {
+  606256: $0 => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad) {
       return 0;
@@ -9639,7 +9639,7 @@ var ASM_CONSTS = {
     }
     return 0;
   },
-  607601: $0 => {
+  606721: $0 => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad) {
       return 0;
@@ -9655,14 +9655,14 @@ var ASM_CONSTS = {
     }
     return 0;
   },
-  608073: $0 => {
+  607193: $0 => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad) {
       return 0;
     }
     return gamepad["id"]["toLowerCase"]()["indexOf"]("xinput") >= 0;
   },
-  608216: () => {
+  607336: () => {
     const os = ([ "Android", "Linux", "iPhone", "Macintosh", "Windows" ]);
     const ua = navigator["userAgent"];
     for (let i = 0; i < os.length; i++) {
@@ -9672,7 +9672,7 @@ var ASM_CONSTS = {
     }
     return 0;
   },
-  608426: ($0, $1, $2) => {
+  607546: ($0, $1, $2) => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad) {
       stringToUTF8("\0", $1, $2);
@@ -9694,14 +9694,14 @@ var ASM_CONSTS = {
     }
     stringToUTF8(output.trim(), $1, $2);
   },
-  609104: $0 => {
+  608224: $0 => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad || !gamepad["vibrationActuator"]) {
       return false;
     }
     return true;
   },
-  609232: ($0, $1, $2, $3, $4) => {
+  608352: ($0, $1, $2, $3, $4) => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad) {
       return false;
@@ -9716,7 +9716,7 @@ var ASM_CONSTS = {
     });
     return true;
   },
-  609545: ($0, $1, $2, $3) => {
+  608665: ($0, $1, $2, $3) => {
     var w = $0;
     var h = $1;
     var pixels = $2;
@@ -9747,7 +9747,7 @@ var ASM_CONSTS = {
     SDL3.ctx.putImageData(SDL3.image, 0, 0);
     return true;
   },
-  610294: () => {
+  609414: () => {
     var SDL3 = Module["SDL3"];
     SDL3["mouse_x"] = 0;
     SDL3["mouse_y"] = 0;
@@ -9773,7 +9773,7 @@ var ASM_CONSTS = {
       }
     });
   },
-  610982: ($0, $1, $2, $3, $4) => {
+  610102: ($0, $1, $2, $3, $4) => {
     var w = $0;
     var h = $1;
     var hot_x = $2;
@@ -9794,20 +9794,20 @@ var ASM_CONSTS = {
     stringToUTF8(url, urlBuf, url.length + 1);
     return urlBuf;
   },
-  611640: $0 => {
+  610760: $0 => {
     if (Module["canvas"]) {
       Module["canvas"].style["cursor"] = UTF8ToString($0);
     }
   },
-  611723: () => {
+  610843: () => {
     if (Module["canvas"]) {
       Module["canvas"].style["cursor"] = "none";
     }
   },
-  611792: () => Module["SDL3"]["mouse_x"],
-  611830: () => Module["SDL3"]["mouse_y"],
-  611868: $0 => Module["SDL3"]["mouse_buttons"][$0],
-  611916: $0 => {
+  610912: () => Module["SDL3"]["mouse_x"],
+  610950: () => Module["SDL3"]["mouse_y"],
+  610988: $0 => Module["SDL3"]["mouse_buttons"][$0],
+  611036: $0 => {
     var data = $0;
     if (document.sdlEventHandlerLockKeysCheck) {
       document.removeEventListener("keydown", document.sdlEventHandlerLockKeysCheck);
@@ -9819,10 +9819,10 @@ var ASM_CONSTS = {
     };
     document.addEventListener("keydown", document.sdlEventHandlerLockKeysCheck);
   },
-  612470: () => {
+  611590: () => {
     document.removeEventListener("keydown", document.sdlEventHandlerLockKeysCheck);
   },
-  612554: $0 => {
+  611674: $0 => {
     var target = document;
     if (target) {
       target.sdlEventHandlerMouseButtonUpGlobal = function(event) {
@@ -9836,7 +9836,7 @@ var ASM_CONSTS = {
       target.addEventListener("pointerup", target.sdlEventHandlerMouseButtonUpGlobal);
     }
   },
-  612915: $0 => {
+  612035: $0 => {
     var SDL3 = Module["SDL3"];
     if (SDL3.makePointerEventCStruct === undefined) {
       SDL3.makePointerEventCStruct = function(left, top, event) {
@@ -9874,7 +9874,7 @@ var ASM_CONSTS = {
       };
     }
   },
-  613907: $0 => {
+  613027: $0 => {
     var id = UTF8ToString($0);
     try {
       var canvas = document.querySelector(id);
@@ -9884,23 +9884,23 @@ var ASM_CONSTS = {
     } catch (e) {}
     return false;
   },
-  614073: () => document.hasFocus(),
-  614105: () => {
+  613193: () => document.hasFocus(),
+  613225: () => {
     var target = document;
     if (target) {
       target.removeEventListener("pointerup", target.sdlEventHandlerMouseButtonUpGlobal);
       target.sdlEventHandlerMouseButtonUpGlobal = undefined;
     }
   },
-  614287: () => document.body.clientWidth,
-  614325: () => document.body.clientHeight,
-  614364: () => window.innerWidth,
-  614394: () => window.innerHeight,
-  614425: () => window.outerWidth,
-  614455: () => window.outerHeight,
-  614486: () => window.pageXOffset,
-  614517: () => window.pageYOffset,
-  614548: ($0, $1) => {
+  613407: () => document.body.clientWidth,
+  613445: () => document.body.clientHeight,
+  613484: () => window.innerWidth,
+  613514: () => window.innerHeight,
+  613545: () => window.outerWidth,
+  613575: () => window.outerHeight,
+  613606: () => window.pageXOffset,
+  613637: () => window.pageYOffset,
+  613668: ($0, $1) => {
     var target = document.querySelector(UTF8ToString($1));
     if (target) {
       var SDL3 = Module["SDL3"];
@@ -9938,7 +9938,7 @@ var ASM_CONSTS = {
       target.addEventListener("pointerup", target.sdlEventHandlerPointerGeneric);
     }
   },
-  615936: ($0, $1, $2) => {
+  615056: ($0, $1, $2) => {
     var target = document.querySelector(UTF8ToString($1));
     if (target) {
       var data = $0;
@@ -10018,7 +10018,7 @@ var ASM_CONSTS = {
       target.addEventListener("dragleave", SDL3.eventHandlerDropDragend);
     }
   },
-  618303: $0 => {
+  617423: $0 => {
     var target = document.querySelector(UTF8ToString($0));
     if (target) {
       var SDL3 = Module["SDL3"];
@@ -10046,7 +10046,7 @@ var ASM_CONSTS = {
       SDL3.eventHandlerDropDragend = undefined;
     }
   },
-  619133: $0 => {
+  618253: $0 => {
     var target = document.querySelector(UTF8ToString($0));
     if (target) {
       target.removeEventListener("pointerenter", target.sdlEventHandlerPointerEnter);
@@ -10061,7 +10061,7 @@ var ASM_CONSTS = {
       target.sdlEventHandlerPointerGeneric = undefined;
     }
   },
-  619867: () => {
+  618987: () => {
     if (!window.matchMedia) {
       return -1;
     }
@@ -10073,7 +10073,7 @@ var ASM_CONSTS = {
     }
     return -1;
   },
-  620076: () => {
+  619196: () => {
     if (typeof (Module["SDL3"]) !== "undefined") {
       var SDL3 = Module["SDL3"];
       SDL3.themeChangedMatchMedia.removeEventListener("change", SDL3.eventHandlerThemeChanged);
@@ -10081,14 +10081,14 @@ var ASM_CONSTS = {
       SDL3.eventHandlerThemeChanged = undefined;
     }
   },
-  620329: () => window.innerWidth,
-  620359: () => window.innerHeight,
-  620390: $0 => {
+  619449: () => window.innerWidth,
+  619479: () => window.innerHeight,
+  619510: $0 => {
     Module["requestFullscreen"] = function(lockPointer, resizeCanvas) {
       _requestFullscreenThroughSDL($0);
     };
   },
-  620499: ($0, $1) => {
+  619619: ($0, $1) => {
     var pngData = (growMemViews(), HEAPU8).buffer instanceof ArrayBuffer ? (growMemViews(), 
     HEAPU8).subarray($0, $0 + $1) : (growMemViews(), HEAPU8).slice($0, $0 + $1);
     var blob = new Blob([ pngData ], {
@@ -10107,12 +10107,12 @@ var ASM_CONSTS = {
     }
     link.href = url;
   },
-  620992: () => {
+  620112: () => {
     Module["requestFullscreen"] = function(lockPointer, resizeCanvas) {};
   },
-  621066: () => window.innerWidth,
-  621096: () => window.innerHeight,
-  621127: $0 => {
+  620186: () => window.innerWidth,
+  620216: () => window.innerHeight,
+  620247: $0 => {
     var canvas = document.querySelector(UTF8ToString($0));
     canvas.SDL3_original_position = canvas.style.position;
     canvas.SDL3_original_top = canvas.style.top;
@@ -10133,7 +10133,7 @@ var ASM_CONSTS = {
     canvas.style.top = "0";
     canvas.style.left = "0";
   },
-  621825: () => {
+  620945: () => {
     var div = document.getElementById("SDL3_fill_document_background_elements");
     if (div) {
       if (div.SDL3_canvas_nextsib) {
@@ -10150,7 +10150,7 @@ var ASM_CONSTS = {
       div.remove();
     }
   },
-  622384: () => {
+  621504: () => {
     if (window.matchMedia) {
       var SDL3 = Module["SDL3"];
       SDL3.eventHandlerThemeChanged = function(event) {
@@ -10160,7 +10160,7 @@ var ASM_CONSTS = {
       SDL3.themeChangedMatchMedia.addEventListener("change", SDL3.eventHandlerThemeChanged);
     }
   },
-  622706: ($0, $1, $2, $3, $4) => {
+  621826: ($0, $1, $2, $3, $4) => {
     var title = UTF8ToString($0);
     var message = UTF8ToString($1);
     var background = UTF8ToString($2);
@@ -10180,7 +10180,7 @@ var ASM_CONSTS = {
     dialog.append(p);
     dialog.showModal();
   },
-  623247: ($0, $1, $2, $3, $4, $5, $6, $7) => {
+  622367: ($0, $1, $2, $3, $4, $5, $6, $7) => {
     var dialog_id = UTF8ToString($0);
     var text = UTF8ToString($1);
     var responseId = $2;
@@ -10221,7 +10221,7 @@ var ASM_CONSTS = {
     dialog.append(button);
     return true;
   },
-  624256: $0 => {
+  623376: $0 => {
     var dialog_id = UTF8ToString($0);
     var dialog = document.getElementById(dialog_id);
     if (!dialog) {
@@ -10229,7 +10229,7 @@ var ASM_CONSTS = {
     }
     return dialog.open;
   },
-  624394: $0 => {
+  623514: $0 => {
     var dialog_id = UTF8ToString($0);
     var dialog = document.getElementById(dialog_id);
     if (!dialog) {
@@ -10241,7 +10241,7 @@ var ASM_CONSTS = {
       return 0;
     }
   },
-  624576: ($0, $1) => {
+  623696: ($0, $1) => {
     alert(UTF8ToString($0) + "\n\n" + UTF8ToString($1));
   }
 };
@@ -10418,7 +10418,7 @@ function init_browser_back_handler() {
 }
 
 // Imports from the Wasm binary.
-var _malloc, _get_fetch_chunk_buffer, _on_fetch_progress, _on_fetch_chunk, _on_fetch_restart_file, _on_fetch_complete, _on_fetch_error, _on_fetch_cancelled, _SDL_free, _free, _mobile_text_input_web_wakeup, _main, _on_browser_back_pressed, _SDL_malloc, _SDL_calloc, _SDL_realloc, _Emscripten_force_free, _CallSDLEmscriptenMainFunction, _SDLEmscriptenCameraPermissionOutcome, _SDLEmscriptenThreadIterate, _Emscripten_HandlePointerEnter, _Emscripten_HandlePointerLeave, _Emscripten_HandlePointerGeneric, _Emscripten_HandleMouseButtonUpGlobal, _Emscripten_SendDragEvent, _Emscripten_SendDragCompleteEvent, _Emscripten_SendDragTextEvent, _Emscripten_SendDragFileEvent, _Emscripten_HandleLockKeysCheck, _Emscripten_SendSystemThemeChangedEvent, _requestFullscreenThroughSDL, _pthread_self, __emscripten_tls_init, _emscripten_builtin_memalign, __emscripten_run_callback_on_thread, __emscripten_thread_init, __emscripten_thread_crashed, __emscripten_run_js_on_main_thread_done, __emscripten_run_js_on_main_thread, __emscripten_thread_free_data, __emscripten_thread_exit, __emscripten_check_mailbox, _setThrew, _emscripten_stack_set_limits, __emscripten_stack_restore, __emscripten_stack_alloc, _emscripten_stack_get_current, __indirect_function_table, wasmTable;
+var _malloc, _get_fetch_chunk_buffer, _on_fetch_progress, _on_fetch_chunk, _on_fetch_restart_file, _on_fetch_complete, _on_fetch_error, _on_fetch_cancelled, _free, _mobile_text_input_web_wakeup, _SDL_free, _main, _on_browser_back_pressed, _SDL_malloc, _SDL_calloc, _SDL_realloc, _Emscripten_force_free, _CallSDLEmscriptenMainFunction, _SDLEmscriptenCameraPermissionOutcome, _SDLEmscriptenThreadIterate, _Emscripten_HandlePointerEnter, _Emscripten_HandlePointerLeave, _Emscripten_HandlePointerGeneric, _Emscripten_HandleMouseButtonUpGlobal, _Emscripten_SendDragEvent, _Emscripten_SendDragCompleteEvent, _Emscripten_SendDragTextEvent, _Emscripten_SendDragFileEvent, _Emscripten_HandleLockKeysCheck, _Emscripten_SendSystemThemeChangedEvent, _requestFullscreenThroughSDL, _pthread_self, __emscripten_tls_init, _emscripten_builtin_memalign, __emscripten_run_callback_on_thread, __emscripten_thread_init, __emscripten_thread_crashed, __emscripten_run_js_on_main_thread_done, __emscripten_run_js_on_main_thread, __emscripten_thread_free_data, __emscripten_thread_exit, __emscripten_check_mailbox, _setThrew, _emscripten_stack_set_limits, __emscripten_stack_restore, __emscripten_stack_alloc, _emscripten_stack_get_current, __indirect_function_table, wasmTable;
 
 function assignWasmExports(wasmExports) {
   _malloc = wasmExports["malloc"];
@@ -10429,9 +10429,9 @@ function assignWasmExports(wasmExports) {
   _on_fetch_complete = Module["_on_fetch_complete"] = wasmExports["on_fetch_complete"];
   _on_fetch_error = Module["_on_fetch_error"] = wasmExports["on_fetch_error"];
   _on_fetch_cancelled = Module["_on_fetch_cancelled"] = wasmExports["on_fetch_cancelled"];
-  _SDL_free = Module["_SDL_free"] = wasmExports["SDL_free"];
   _free = wasmExports["free"];
   _mobile_text_input_web_wakeup = Module["_mobile_text_input_web_wakeup"] = wasmExports["mobile_text_input_web_wakeup"];
+  _SDL_free = Module["_SDL_free"] = wasmExports["SDL_free"];
   _main = Module["_main"] = wasmExports["__main_argc_argv"];
   _on_browser_back_pressed = Module["_on_browser_back_pressed"] = wasmExports["on_browser_back_pressed"];
   _SDL_malloc = Module["_SDL_malloc"] = wasmExports["SDL_malloc"];
