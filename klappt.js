@@ -48,7 +48,7 @@ if (ENVIRONMENT_IS_NODE) {
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmpcni1n3sp.js
+// include: /tmp/tmpvyofbiky.js
 if (!Module["expectedDataFileDownloads"]) Module["expectedDataFileDownloads"] = 0;
 
 Module["expectedDataFileDownloads"]++;
@@ -171,31 +171,31 @@ Module["expectedDataFileDownloads"]++;
       "start": 0,
       "end": 414664
     }, {
-      "filename": "/Inter-VariableFont.ttf",
+      "filename": "/Inter-Regular.ttf",
       "start": 414664,
-      "end": 1162732
+      "end": 826304
     }, {
       "filename": "/JetBrainsMono-Bold.ttf",
-      "start": 1162732,
-      "end": 1440560
+      "start": 826304,
+      "end": 1104132
     }, {
       "filename": "/JetBrainsMono-Regular.ttf",
-      "start": 1440560,
-      "end": 1714460
+      "start": 1104132,
+      "end": 1378032
     }, {
       "filename": "/ReadexPro-Regular.ttf",
-      "start": 1714460,
-      "end": 1841808
+      "start": 1378032,
+      "end": 1505380
     }, {
       "filename": "/cacert.pem",
-      "start": 1841808,
-      "end": 2028254
+      "start": 1505380,
+      "end": 1691826
     } ],
-    "remote_package_size": 2028254
+    "remote_package_size": 1691826
   });
 })();
 
-// end include: /tmp/tmpcni1n3sp.js
+// end include: /tmp/tmpvyofbiky.js
 // include: /home/x/src/klappt/src/platform/web/web_persist.js
 Module.preRun = Module.preRun || [];
 
@@ -9098,7 +9098,7 @@ Module["FS_createLazyFile"] = FS_createLazyFile;
 var proxiedFunctionTable = [ _proc_exit, exitOnMainThread, pthreadCreateProxied, ___syscall_fcntl64, ___syscall_fdatasync, ___syscall_fstat64, ___syscall_ftruncate64, ___syscall_getdents64, ___syscall_ioctl, ___syscall_lstat64, ___syscall_mkdirat, ___syscall_newfstatat, ___syscall_openat, ___syscall_renameat, ___syscall_rmdir, ___syscall_stat64, ___syscall_unlinkat, ___syscall_utimensat, __mmap_js, __munmap_js, _emscripten_exit_fullscreen, getCanvasSizeMainThread, setCanvasElementSizeMainThread, _emscripten_exit_pointerlock, _emscripten_get_device_pixel_ratio, _emscripten_get_element_css_size, _emscripten_get_fullscreen_status, _emscripten_get_gamepad_status, _emscripten_get_num_gamepads, _emscripten_get_screen_size, _emscripten_request_fullscreen_strategy, _emscripten_request_pointerlock, _emscripten_sample_gamepad_data, _emscripten_set_beforeunload_callback_on_thread, _emscripten_set_blur_callback_on_thread, _emscripten_set_devicemotion_callback_on_thread, _emscripten_set_element_css_size, _emscripten_set_focus_callback_on_thread, _emscripten_set_fullscreenchange_callback_on_thread, _emscripten_set_gamepadconnected_callback_on_thread, _emscripten_set_gamepaddisconnected_callback_on_thread, _emscripten_set_keydown_callback_on_thread, _emscripten_set_keypress_callback_on_thread, _emscripten_set_keyup_callback_on_thread, _emscripten_set_orientationchange_callback_on_thread, _emscripten_set_pointerlockchange_callback_on_thread, _emscripten_set_resize_callback_on_thread, _emscripten_set_visibilitychange_callback_on_thread, _emscripten_set_wheel_callback_on_thread, _emscripten_set_window_title, _environ_get, _environ_sizes_get, _fd_close, _fd_pread, _fd_pwrite, _fd_read, _fd_seek, _fd_write ];
 
 var ASM_CONSTS = {
-  590768: () => {
+  591024: () => {
     if (typeof navigator == "undefined" || typeof window == "undefined") {
       return 0;
     }
@@ -9110,7 +9110,7 @@ var ASM_CONSTS = {
     const coarsePointer = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
     return (mobileUA || ipadDesktopMode || coarsePointer) ? 1 : 0;
   },
-  591323: () => {
+  591579: () => {
     const state = Module.lexiSDLTextInput;
     if (!state || !state.input) {
       return;
@@ -9125,7 +9125,7 @@ var ASM_CONSTS = {
     } catch (e) {}
     state.input.style.display = "none";
   },
-  591606: ($0, $1, $2, $3) => {
+  591862: ($0, $1, $2, $3) => {
     const state = Module.lexiSDLTextInput;
     if (!state || !state.input) {
       return;
@@ -9136,14 +9136,14 @@ var ASM_CONSTS = {
     state.input.style.height = $3 + "px";
     state.input.style.pointerEvents = state.active ? "auto" : "none";
   },
-  591901: ($0, $1) => {
+  592157: ($0, $1) => {
     const state = Module.lexiSDLTextInput;
     if (!state || !state.input) {
       return;
     }
     stringToUTF8(state.input.value || "", $0, $1);
   },
-  592031: () => {
+  592287: () => {
     const state = Module.lexiSDLTextInput;
     if (!state) {
       return 0;
@@ -9152,7 +9152,7 @@ var ASM_CONSTS = {
     state.submitted = false;
     return submitted;
   },
-  592186: () => {
+  592442: () => {
     const state = Module.lexiSDLTextInput;
     if (!state) {
       return 0;
@@ -9171,7 +9171,7 @@ var ASM_CONSTS = {
     state.blurred = false;
     return blurred;
   },
-  592671: ($0, $1, $2, $3, $4, $5) => {
+  592927: ($0, $1, $2, $3, $4, $5) => {
     let state = Module.lexiSDLTextInput;
     if (!state) {
       state = {};
@@ -9259,27 +9259,27 @@ var ASM_CONSTS = {
       input.setSelectionRange(end, end);
     } catch (e) {}
   },
-  594964: () => {
+  595220: () => {
     const state = Module.lexiSDLTextInput;
     if (state && state.input) {
       state.input.value = "";
     }
   },
-  595061: () => {
+  595317: () => {
     FS.mkdir("/assets");
     FS.mount(IDBFS, {}, "/assets");
   },
-  595114: () => {
+  595370: () => {
     FS.syncfs(true, function(err) {
       if (err) console.error("IDBFS sync error:", err);
     });
   },
-  595201: () => {
+  595457: () => {
     FS.syncfs(false, function(err) {
       console.log("Saved to IndexedDB");
     });
   },
-  595273: () => {
+  595529: () => {
     if (typeof (Module["SDL3"]) === "undefined") {
       Module["SDL3"] = {};
     }
@@ -9295,7 +9295,7 @@ var ASM_CONSTS = {
       };
     }
   },
-  595587: $0 => {
+  595843: $0 => {
     var str = UTF8ToString($0) + "\n\n" + "Abort/Retry/Ignore/AlwaysIgnore? [ariA] :";
     var reply = window.prompt(str, "i");
     if (reply === null) {
@@ -9303,13 +9303,13 @@ var ASM_CONSTS = {
     }
     return reply.length === 1 ? reply.charCodeAt(0) : -1;
   },
-  595802: () => {
+  596058: () => {
     Module["SDL3"].dummy_audio = {};
     Module["SDL3"].dummy_audio.timers = [];
     Module["SDL3"].dummy_audio.timers[0] = undefined;
     Module["SDL3"].dummy_audio.timers[1] = undefined;
   },
-  595979: ($0, $1, $2, $3, $4) => {
+  596235: ($0, $1, $2, $3, $4) => {
     var a = Module["SDL3"].dummy_audio;
     if (a.timers[$0] !== undefined) {
       clearInterval(a.timers[$0]);
@@ -9318,14 +9318,14 @@ var ASM_CONSTS = {
       dynCall("vi", $3, [ $4 ]);
     }, ($1 / $2) * 1e3);
   },
-  596171: $0 => {
+  596427: $0 => {
     var a = Module["SDL3"].dummy_audio;
     if (a.timers[$0] !== undefined) {
       clearInterval(a.timers[$0]);
     }
     a.timers[$0] = undefined;
   },
-  596302: $0 => {
+  596558: $0 => {
     var parms = new URLSearchParams(window.location.search);
     for (const [key, value] of parms) {
       if (key.startsWith("SDL_")) {
@@ -9339,7 +9339,7 @@ var ASM_CONSTS = {
       }
     }
   },
-  596643: () => {
+  596899: () => {
     if (typeof (AudioContext) !== "undefined") {
       return true;
     } else if (typeof (webkitAudioContext) !== "undefined") {
@@ -9347,13 +9347,13 @@ var ASM_CONSTS = {
     }
     return false;
   },
-  596790: () => {
+  597046: () => {
     if ((typeof (navigator.mediaDevices) !== "undefined") && (typeof (navigator.mediaDevices.getUserMedia) !== "undefined")) {
       return true;
     }
     return false;
   },
-  596944: () => {
+  597200: () => {
     var SDL3 = Module["SDL3"];
     if (typeof (SDL3.audio_playback) === "undefined") {
       SDL3.audio_playback = {};
@@ -9375,8 +9375,8 @@ var ASM_CONSTS = {
     }
     return (SDL3.audioContext !== undefined);
   },
-  597523: () => Module["SDL3"].audioContext.sampleRate,
-  597574: ($0, $1, $2, $3) => {
+  597779: () => Module["SDL3"].audioContext.sampleRate,
+  597830: ($0, $1, $2, $3) => {
     var SDL3 = Module["SDL3"];
     var have_microphone = function(stream) {
       if (SDL3.audio_recording.silenceTimer !== undefined) {
@@ -9413,7 +9413,7 @@ var ASM_CONSTS = {
       }).then(have_microphone).catch(no_microphone);
     }
   },
-  599265: ($0, $1, $2, $3) => {
+  599521: ($0, $1, $2, $3) => {
     var SDL3 = Module["SDL3"];
     SDL3.audio_playback.scriptProcessorNode = SDL3.audioContext["createScriptProcessor"]($1, 0, $0);
     SDL3.audio_playback.scriptProcessorNode["onaudioprocess"] = function(e) {
@@ -9445,7 +9445,7 @@ var ASM_CONSTS = {
       SDL3.audio_playback.silenceTimer = setInterval(silence_callback, ($1 / SDL3.audioContext.sampleRate) * 1e3);
     }
   },
-  600581: $0 => {
+  600837: $0 => {
     var SDL3 = Module["SDL3"];
     if ($0) {
       if (SDL3.audio_recording.silenceTimer !== undefined) {
@@ -9479,7 +9479,7 @@ var ASM_CONSTS = {
       SDL3.audioContext = undefined;
     }
   },
-  601737: ($0, $1) => {
+  601993: ($0, $1) => {
     var SDL3 = Module["SDL3"];
     var buf = SDL3.CPtrToHeap32Index($0);
     var numChannels = SDL3.audio_playback.currentPlaybackBuffer["numberOfChannels"];
@@ -9493,7 +9493,7 @@ var ASM_CONSTS = {
       }
     }
   },
-  602270: ($0, $1) => {
+  602526: ($0, $1) => {
     var SDL3 = Module["SDL3"];
     var numChannels = SDL3.audio_recording.currentRecordingBuffer.numberOfChannels;
     for (var c = 0; c < numChannels; ++c) {
@@ -9512,11 +9512,11 @@ var ASM_CONSTS = {
       }
     }
   },
-  602897: () => {
+  603153: () => {
     Module["SDL3"].camera = {};
   },
-  602929: () => (navigator.mediaDevices === undefined) ? 0 : 1,
-  602988: ($0, $1, $2, $3, $4) => {
+  603185: () => (navigator.mediaDevices === undefined) ? 0 : 1,
+  603244: ($0, $1, $2, $3, $4) => {
     const device = $0;
     const w = $1;
     const h = $2;
@@ -9590,7 +9590,7 @@ var ASM_CONSTS = {
       outcome(device, 0, 0, 0, 0);
     });
   },
-  605294: () => {
+  605550: () => {
     const SDL3 = Module["SDL3"];
     if ((typeof (SDL3) === "undefined") || (typeof (SDL3.camera) === "undefined") || (typeof (SDL3.camera.stream) === "undefined")) {
       return;
@@ -9598,7 +9598,7 @@ var ASM_CONSTS = {
     SDL3.camera.stream.getTracks().forEach(track => track.stop());
     SDL3.camera = {};
   },
-  605545: ($0, $1, $2) => {
+  605801: ($0, $1, $2) => {
     const w = $0;
     const h = $1;
     const rgba = $2;
@@ -9611,19 +9611,19 @@ var ASM_CONSTS = {
     (growMemViews(), HEAPU8).set(imgrgba, rgba);
     return 1;
   },
-  605923: () => {
+  606179: () => {
     if (typeof (Module["SDL3"]) !== "undefined") {
       Module["SDL3"].camera = undefined;
     }
   },
-  606010: $0 => {
+  606266: $0 => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad || !gamepad["vibrationActuator"] || !gamepad["vibrationActuator"]["effects"] || !gamepad["vibrationActuator"]["effects"]["includes"]("trigger-rumble")) {
       return false;
     }
     return true;
   },
-  606256: $0 => {
+  606512: $0 => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad) {
       return 0;
@@ -9639,7 +9639,7 @@ var ASM_CONSTS = {
     }
     return 0;
   },
-  606721: $0 => {
+  606977: $0 => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad) {
       return 0;
@@ -9655,14 +9655,14 @@ var ASM_CONSTS = {
     }
     return 0;
   },
-  607193: $0 => {
+  607449: $0 => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad) {
       return 0;
     }
     return gamepad["id"]["toLowerCase"]()["indexOf"]("xinput") >= 0;
   },
-  607336: () => {
+  607592: () => {
     const os = ([ "Android", "Linux", "iPhone", "Macintosh", "Windows" ]);
     const ua = navigator["userAgent"];
     for (let i = 0; i < os.length; i++) {
@@ -9672,7 +9672,7 @@ var ASM_CONSTS = {
     }
     return 0;
   },
-  607546: ($0, $1, $2) => {
+  607802: ($0, $1, $2) => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad) {
       stringToUTF8("\0", $1, $2);
@@ -9694,14 +9694,14 @@ var ASM_CONSTS = {
     }
     stringToUTF8(output.trim(), $1, $2);
   },
-  608224: $0 => {
+  608480: $0 => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad || !gamepad["vibrationActuator"]) {
       return false;
     }
     return true;
   },
-  608352: ($0, $1, $2, $3, $4) => {
+  608608: ($0, $1, $2, $3, $4) => {
     let gamepad = navigator["getGamepads"]()[$0];
     if (!gamepad) {
       return false;
@@ -9716,7 +9716,7 @@ var ASM_CONSTS = {
     });
     return true;
   },
-  608665: ($0, $1, $2, $3) => {
+  608921: ($0, $1, $2, $3) => {
     var w = $0;
     var h = $1;
     var pixels = $2;
@@ -9747,7 +9747,7 @@ var ASM_CONSTS = {
     SDL3.ctx.putImageData(SDL3.image, 0, 0);
     return true;
   },
-  609414: () => {
+  609670: () => {
     var SDL3 = Module["SDL3"];
     SDL3["mouse_x"] = 0;
     SDL3["mouse_y"] = 0;
@@ -9773,7 +9773,7 @@ var ASM_CONSTS = {
       }
     });
   },
-  610102: ($0, $1, $2, $3, $4) => {
+  610358: ($0, $1, $2, $3, $4) => {
     var w = $0;
     var h = $1;
     var hot_x = $2;
@@ -9794,20 +9794,20 @@ var ASM_CONSTS = {
     stringToUTF8(url, urlBuf, url.length + 1);
     return urlBuf;
   },
-  610760: $0 => {
+  611016: $0 => {
     if (Module["canvas"]) {
       Module["canvas"].style["cursor"] = UTF8ToString($0);
     }
   },
-  610843: () => {
+  611099: () => {
     if (Module["canvas"]) {
       Module["canvas"].style["cursor"] = "none";
     }
   },
-  610912: () => Module["SDL3"]["mouse_x"],
-  610950: () => Module["SDL3"]["mouse_y"],
-  610988: $0 => Module["SDL3"]["mouse_buttons"][$0],
-  611036: $0 => {
+  611168: () => Module["SDL3"]["mouse_x"],
+  611206: () => Module["SDL3"]["mouse_y"],
+  611244: $0 => Module["SDL3"]["mouse_buttons"][$0],
+  611292: $0 => {
     var data = $0;
     if (document.sdlEventHandlerLockKeysCheck) {
       document.removeEventListener("keydown", document.sdlEventHandlerLockKeysCheck);
@@ -9819,10 +9819,10 @@ var ASM_CONSTS = {
     };
     document.addEventListener("keydown", document.sdlEventHandlerLockKeysCheck);
   },
-  611590: () => {
+  611846: () => {
     document.removeEventListener("keydown", document.sdlEventHandlerLockKeysCheck);
   },
-  611674: $0 => {
+  611930: $0 => {
     var target = document;
     if (target) {
       target.sdlEventHandlerMouseButtonUpGlobal = function(event) {
@@ -9836,7 +9836,7 @@ var ASM_CONSTS = {
       target.addEventListener("pointerup", target.sdlEventHandlerMouseButtonUpGlobal);
     }
   },
-  612035: $0 => {
+  612291: $0 => {
     var SDL3 = Module["SDL3"];
     if (SDL3.makePointerEventCStruct === undefined) {
       SDL3.makePointerEventCStruct = function(left, top, event) {
@@ -9874,7 +9874,7 @@ var ASM_CONSTS = {
       };
     }
   },
-  613027: $0 => {
+  613283: $0 => {
     var id = UTF8ToString($0);
     try {
       var canvas = document.querySelector(id);
@@ -9884,23 +9884,23 @@ var ASM_CONSTS = {
     } catch (e) {}
     return false;
   },
-  613193: () => document.hasFocus(),
-  613225: () => {
+  613449: () => document.hasFocus(),
+  613481: () => {
     var target = document;
     if (target) {
       target.removeEventListener("pointerup", target.sdlEventHandlerMouseButtonUpGlobal);
       target.sdlEventHandlerMouseButtonUpGlobal = undefined;
     }
   },
-  613407: () => document.body.clientWidth,
-  613445: () => document.body.clientHeight,
-  613484: () => window.innerWidth,
-  613514: () => window.innerHeight,
-  613545: () => window.outerWidth,
-  613575: () => window.outerHeight,
-  613606: () => window.pageXOffset,
-  613637: () => window.pageYOffset,
-  613668: ($0, $1) => {
+  613663: () => document.body.clientWidth,
+  613701: () => document.body.clientHeight,
+  613740: () => window.innerWidth,
+  613770: () => window.innerHeight,
+  613801: () => window.outerWidth,
+  613831: () => window.outerHeight,
+  613862: () => window.pageXOffset,
+  613893: () => window.pageYOffset,
+  613924: ($0, $1) => {
     var target = document.querySelector(UTF8ToString($1));
     if (target) {
       var SDL3 = Module["SDL3"];
@@ -9938,7 +9938,7 @@ var ASM_CONSTS = {
       target.addEventListener("pointerup", target.sdlEventHandlerPointerGeneric);
     }
   },
-  615056: ($0, $1, $2) => {
+  615312: ($0, $1, $2) => {
     var target = document.querySelector(UTF8ToString($1));
     if (target) {
       var data = $0;
@@ -10018,7 +10018,7 @@ var ASM_CONSTS = {
       target.addEventListener("dragleave", SDL3.eventHandlerDropDragend);
     }
   },
-  617423: $0 => {
+  617679: $0 => {
     var target = document.querySelector(UTF8ToString($0));
     if (target) {
       var SDL3 = Module["SDL3"];
@@ -10046,7 +10046,7 @@ var ASM_CONSTS = {
       SDL3.eventHandlerDropDragend = undefined;
     }
   },
-  618253: $0 => {
+  618509: $0 => {
     var target = document.querySelector(UTF8ToString($0));
     if (target) {
       target.removeEventListener("pointerenter", target.sdlEventHandlerPointerEnter);
@@ -10061,7 +10061,7 @@ var ASM_CONSTS = {
       target.sdlEventHandlerPointerGeneric = undefined;
     }
   },
-  618987: () => {
+  619243: () => {
     if (!window.matchMedia) {
       return -1;
     }
@@ -10073,7 +10073,7 @@ var ASM_CONSTS = {
     }
     return -1;
   },
-  619196: () => {
+  619452: () => {
     if (typeof (Module["SDL3"]) !== "undefined") {
       var SDL3 = Module["SDL3"];
       SDL3.themeChangedMatchMedia.removeEventListener("change", SDL3.eventHandlerThemeChanged);
@@ -10081,14 +10081,14 @@ var ASM_CONSTS = {
       SDL3.eventHandlerThemeChanged = undefined;
     }
   },
-  619449: () => window.innerWidth,
-  619479: () => window.innerHeight,
-  619510: $0 => {
+  619705: () => window.innerWidth,
+  619735: () => window.innerHeight,
+  619766: $0 => {
     Module["requestFullscreen"] = function(lockPointer, resizeCanvas) {
       _requestFullscreenThroughSDL($0);
     };
   },
-  619619: ($0, $1) => {
+  619875: ($0, $1) => {
     var pngData = (growMemViews(), HEAPU8).buffer instanceof ArrayBuffer ? (growMemViews(), 
     HEAPU8).subarray($0, $0 + $1) : (growMemViews(), HEAPU8).slice($0, $0 + $1);
     var blob = new Blob([ pngData ], {
@@ -10107,12 +10107,12 @@ var ASM_CONSTS = {
     }
     link.href = url;
   },
-  620112: () => {
+  620368: () => {
     Module["requestFullscreen"] = function(lockPointer, resizeCanvas) {};
   },
-  620186: () => window.innerWidth,
-  620216: () => window.innerHeight,
-  620247: $0 => {
+  620442: () => window.innerWidth,
+  620472: () => window.innerHeight,
+  620503: $0 => {
     var canvas = document.querySelector(UTF8ToString($0));
     canvas.SDL3_original_position = canvas.style.position;
     canvas.SDL3_original_top = canvas.style.top;
@@ -10133,7 +10133,7 @@ var ASM_CONSTS = {
     canvas.style.top = "0";
     canvas.style.left = "0";
   },
-  620945: () => {
+  621201: () => {
     var div = document.getElementById("SDL3_fill_document_background_elements");
     if (div) {
       if (div.SDL3_canvas_nextsib) {
@@ -10150,7 +10150,7 @@ var ASM_CONSTS = {
       div.remove();
     }
   },
-  621504: () => {
+  621760: () => {
     if (window.matchMedia) {
       var SDL3 = Module["SDL3"];
       SDL3.eventHandlerThemeChanged = function(event) {
@@ -10160,7 +10160,7 @@ var ASM_CONSTS = {
       SDL3.themeChangedMatchMedia.addEventListener("change", SDL3.eventHandlerThemeChanged);
     }
   },
-  621826: ($0, $1, $2, $3, $4) => {
+  622082: ($0, $1, $2, $3, $4) => {
     var title = UTF8ToString($0);
     var message = UTF8ToString($1);
     var background = UTF8ToString($2);
@@ -10180,7 +10180,7 @@ var ASM_CONSTS = {
     dialog.append(p);
     dialog.showModal();
   },
-  622367: ($0, $1, $2, $3, $4, $5, $6, $7) => {
+  622623: ($0, $1, $2, $3, $4, $5, $6, $7) => {
     var dialog_id = UTF8ToString($0);
     var text = UTF8ToString($1);
     var responseId = $2;
@@ -10221,7 +10221,7 @@ var ASM_CONSTS = {
     dialog.append(button);
     return true;
   },
-  623376: $0 => {
+  623632: $0 => {
     var dialog_id = UTF8ToString($0);
     var dialog = document.getElementById(dialog_id);
     if (!dialog) {
@@ -10229,7 +10229,7 @@ var ASM_CONSTS = {
     }
     return dialog.open;
   },
-  623514: $0 => {
+  623770: $0 => {
     var dialog_id = UTF8ToString($0);
     var dialog = document.getElementById(dialog_id);
     if (!dialog) {
@@ -10241,7 +10241,7 @@ var ASM_CONSTS = {
       return 0;
     }
   },
-  623696: ($0, $1) => {
+  623952: ($0, $1) => {
     alert(UTF8ToString($0) + "\n\n" + UTF8ToString($1));
   }
 };
