@@ -1,0 +1,5 @@
+espeak-ng-data-and-piper.zip filter=lfs diff=lfs merge=lfs -text
+sherpa-onnx-whisper-base.zip filter=lfs diff=lfs merge=lfs -text
+words-en.xapian.zip filter=lfs diff=lfs merge=lfs -text
+words-ru.xapian.zip filter=lfs diff=lfs merge=lfs -text
+words-tr.xapian.zip filter=lfs diff=lfs merge=lfs -text
